@@ -22,4 +22,28 @@ class Index extends Controller
         /*日志扩展测试*/
         \SeasLog::info('test');
     }
+
+    /**
+     * 测试：
+     * eg：curl -X POST "http://tp5-zerg/test/r/123?name=eson" -d "age=18"
+     *
+     * @param $id
+     * @param $name
+     * @param $age
+     * @return string
+     */
+    public function route ($id, $name, $age)
+    {
+        $post_age = input('post.age'); // 助手函数
+
+        print_r($post_age);
+
+        $arr = [
+            $id, $name, $age
+        ];
+
+        print_r($arr);
+
+        return 'okay';
+    }
 }

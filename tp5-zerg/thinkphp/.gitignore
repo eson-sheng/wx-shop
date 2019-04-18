@@ -1,0 +1,8 @@
+.idea
+composer.lock
+*.log
+# thinkphp
+
+# 本地配置文件
+/application/local_database.php
+/application/local_config.php

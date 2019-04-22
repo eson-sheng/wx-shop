@@ -24,7 +24,7 @@ class Index extends Controller
     }
 
     /**
-     * 测试：
+     * 自定义路由测试：
      * eg：curl -X POST "http://tp5-zerg/test/r/123?name=eson" -d "age=18"
      *
      * @param $id
